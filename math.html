@@ -8,5 +8,28 @@
   </head>
   <title> Un peut de math </title>
   <body>
-    <p> Bien faite! Ta additioné 2 nombres volontairement. </p>
+    <h1> Additione 2 nombres et gagne une reponse!</h1>
+    <script>
+  var question = prompt ("choisi 1,2,3,4,5 pour 1+,2-,3x,4/,5%");
+  var numero = prompt("choisi ta premiere numero");
+  var numero2 = prompt("Choisi ta deuxieme numero");
+    var reponse = 0
+ 
+if (question == 1){
+  reponse = (numero + numero2);
+}
+  else if (question == 2){
+     reponse = (numero - numero2);
+}
+  else if (question == 3){
+     reponse = (numero * numero2);
+}
+  else if (question == 4){
+    reponse = (numero / numero2);
+}
+  else if (question == 5){
+    reponse = ((numero/numero2)*100)
+}
+document.write("La reponse est " + reponse)
+    </script>
   </body>
