@@ -9,7 +9,8 @@
   <title> Un peut de math </title>
   <body>
     <h1> Additione 2 nombres et gagne une reponse!</h1>
-    <script>
+    <script> 
+      function motif(){
   var question = prompt ("choisi 1,2,3,4,5 pour 1+,2-,3x,4/,5%");
   var numero = prompt("choisi ta premiere numero");
   var numero2 = prompt("Choisi ta deuxieme numero");
@@ -31,5 +32,7 @@ if (question == 1){
     reponse = ((numero/numero2)*100)
 }
 document.write("La reponse est " + reponse)
+      }
     </script>
+    <a onclick="motif();">Faire l'addition!</a>
   </body>
