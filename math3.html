@@ -8,5 +8,21 @@
   </head>
   <title> Un peut de math partie 3 </title>
   <body>
-    <p> Bien faite! Ta additioné 2 nombres volontairement. </p>
+    <script>
+    var somme = 0
+var num = 0
+ 
+for (let i = 0; i < 5; i++) {
+ num = parseInt(prompt("Quelle est le prix de cette item?"))
+  somme = somme + num
+ num = num.toFixed(2)
+ document.write ("Le prix de cette item est de " + num + "$")
+}
+ 
+sommetax = somme*0.13
+somme = somme + sommetax
+somme = somme.toFixed(2)
+ 
+document.write ("votre prix total est de " + somme + "$")
+    </script>
   </body>
